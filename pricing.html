@@ -78,201 +78,87 @@
       </div>
       <section class="pt-24 pb-32 bg-white overflow-hidden">
         <div class="container">
-          <div class="mw-md-xl mx-auto text-center mb-20">
+          <div class="mw-md-xl mx-auto text-center mb-16">
             <h2 class="fs-10 text-secondary mb-5">Start with the right plan</h2>
-            <p class="text-muted">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-            <div class="mx-auto d-flex align-items-center justify-content-between border rounded-pill" style="padding: 2px; max-width: 270px;"><a class="py-3 px-8 fs-20 fw-semibold text-white text-uppercase rounded-pill" style="letter-spacing: 1px; background: linear-gradient(98.24deg, #FFB36D 0%, #EC5353 100%);" href="#">Monthly</a><a class="py-3 px-8 fs-20 fw-semibold text-secondary text-uppercase bg-white rounded-pill" style="letter-spacing: 1px;" href="#">Yearly</a></div>
+            <p class="text-muted mb-8">Calculate your monthly cost based on usage minutes. Our tiered pricing gets more affordable as you scale.</p>
           </div>
-          <div class="container" style="overflow-x: auto; width: 100%">
-            <div class="row g-6" style="width: 1524px">
-              <div class="col">
-                <div class="row">
-                  <div class="col-12" style="height: 110px;"></div>
-                  <div class="d-flex align-items-center col-12 py-3 pt-6 border-bottom border-top" style="height: 69px;">
-                    <p class="fs-17 mb-0">Cloud Storage</p>
+          
+          <!-- Interactive Pricing Calculator -->
+          <div class="mw-md-4xl mx-auto">
+            <div class="bg-white rounded-3 p-8 shadow-lg border">
+              <div class="text-center mb-8">
+                <h3 class="fs-14 mb-4">Monthly Usage Calculator</h3>
+                <p class="text-muted mb-6">Adjust the slider to see your estimated monthly cost</p>
+                
+                <!-- Minutes Display -->
+                <div class="mb-6">
+                  <div class="d-flex align-items-center justify-content-center mb-4">
+                    <span class="fs-12 fw-bold text-secondary" id="minutesDisplay">1,000</span>
+                    <span class="fs-17 text-muted ms-2">minutes per month</span>
                   </div>
-                  <div class="d-flex align-items-center col-12 py-3 border-bottom" style="height: 54px;">
-                    <p class="fs-17 mb-0">Maximum Interval Time</p>
-                  </div>
-                  <div class="d-flex align-items-center col-12 py-3 border-bottom" style="height: 54px;">
-                    <p class="fs-17 mb-0">Number of Websites</p>
-                  </div>
-                  <div class="d-flex align-items-center col-12 py-3 border-bottom" style="height: 54px;">
-                    <p class="fs-17 mb-0">Custom Domain</p>
-                  </div>
-                  <div class="d-flex align-items-center col-12 py-3 border-bottom" style="height: 54px;">
-                    <p class="fs-17 mb-0">Queries</p>
-                  </div>
-                  <div class="d-flex align-items-center col-12 py-3 border-bottom" style="height: 54px;">
-                    <p class="fs-17 mb-0">Email Accounts</p>
-                  </div>
-                  <div class="d-flex align-items-center col-12 py-3 border-bottom" style="height: 54px;">
-                    <p class="fs-17 mb-0">Email Notification</p>
-                  </div>
-                  <div class="d-flex align-items-center col-12 py-3 border-bottom" style="height: 54px;">
-                    <p class="fs-17 mb-0">SMS Notification</p>
+                  
+                  <!-- Slider -->
+                  <div class="position-relative mb-4">
+                    <input type="range" class="form-range" id="minutesSlider" min="0" max="30000" value="1000" step="100" style="height: 8px;">
+                    <div class="d-flex justify-content-between mt-2">
+                      <small class="text-muted">0</small>
+                      <small class="text-muted">30,000+</small>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="row">
-                  <div class="col-12 pb-7" style="height: 110px;">
-                    <h2 class="fs-16 mb-2">Free</h2>
-                    <h3 class="fs-14 mb-2">$0</h3>
-                    <p class="fs-19 text-muted mb-0">Best for freelancers</p>
+                
+                <!-- Pricing Display -->
+                <div class="text-center mb-6">
+                  <div class="mb-4">
+                    <h2 class="fs-8 mb-2" style="background: linear-gradient(98.24deg, #FFB36D 0%, #EC5353 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;" id="totalCost">$380.00</h2>
+                    <p class="fs-17 text-muted">per month</p>
                   </div>
-                  <div class="d-flex align-items-center col-12 py-3 pt-6 border-bottom border-top" style="height: 69px;">
-                    <h3 class="fs-17 fw-semibold mb-0">5 GB</h3>
-                  </div>
-                  <div class="d-flex align-items-center col-12 py-3 border-bottom" style="height: 54px;">
-                    <h3 class="fs-17 fw-semibold mb-0">15 mins</h3>
-                  </div>
-                  <div class="d-flex align-items-center col-12 py-3 border-bottom" style="height: 54px;">
-                    <h3 class="fs-17 fw-semibold mb-0">1</h3>
-                  </div>
-                  <div class="d-flex align-items-center col-12 py-3 border-bottom" style="height: 54px;">
-                    <h3 class="fs-17 fw-semibold mb-0">2</h3>
-                  </div>
-                  <div class="d-flex align-items-center col-12 py-3 border-bottom" style="height: 54px;">
-                    <h3 class="fs-17 fw-semibold mb-0">50</h3>
-                  </div>
-                  <div class="d-flex align-items-center col-12 py-3 border-bottom" style="height: 54px;">
-                    <h3 class="fs-17 fw-semibold mb-0">5</h3>
-                  </div>
-                  <div class="d-flex align-items-center col-12 py-3 border-bottom" style="height: 54px;">
-                    <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M16.7071 5.29289C17.0976 5.68342 17.0976 6.31658 16.7071 6.70711L8.70711 14.7071C8.31658 15.0976 7.68342 15.0976 7.29289 14.7071L3.29289 10.7071C2.90237 10.3166 2.90237 9.68342 3.29289 9.29289C3.68342 8.90237 4.31658 8.90237 4.70711 9.29289L8 12.5858L15.2929 5.29289C15.6834 4.90237 16.3166 4.90237 16.7071 5.29289Z" fill="#14B082"></path>
-                    </svg>
-                  </div>
-                  <div class="d-flex align-items-center col-12 py-3 border-bottom" style="height: 54px;">
-                    <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M6 18L18 6M6 6L18 18" stroke="#A1A1AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                  </div>
-                  <div class="d-flex align-items-center col-12 pt-6">
-                    <button class="btn btn-outline-light-dark fs-18 text-black fw-bold px-10 py-3" type="button">Choose</button>
+                  
+                  <div class="d-flex justify-content-center align-items-center mb-4">
+                    <span class="fs-17 text-muted me-2">Rate:</span>
+                    <span class="fs-16 fw-semibold text-secondary" id="currentRate">$0.38</span>
+                    <span class="fs-17 text-muted ms-1">per minute</span>
                   </div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="row">
-                  <div class="col-12 pb-7" style="height: 110px;">
-                    <h2 class="fs-16 mb-2">Starter</h2>
-                    <h3 class="fs-14 mb-2">$9/mo</h3>
-                    <p class="fs-19 text-muted mb-0">Best for small agecny</p>
+                
+                <!-- Pricing Tiers Info -->
+                <div class="row g-4 mb-8">
+                  <div class="col-12 col-md-4">
+                    <div class="p-4 rounded-2 border" id="tier1" style="transition: all 0.3s ease;">
+                      <h4 class="fs-16 fw-semibold mb-2">Starter</h4>
+                      <p class="fs-18 fw-bold mb-2" style="color: #FFB36D;">$0.38/min</p>
+                      <p class="fs-19 text-muted mb-0">Up to 6,000 minutes</p>
+                    </div>
                   </div>
-                  <div class="d-flex align-items-center col-12 py-3 pt-6 border-bottom border-top" style="height: 69px;">
-                    <h3 class="fs-17 fw-semibold mb-0">100 GB</h3>
+                  <div class="col-12 col-md-4">
+                    <div class="p-4 rounded-2 border" id="tier2" style="transition: all 0.3s ease;">
+                      <h4 class="fs-16 fw-semibold mb-2">Growth</h4>
+                      <p class="fs-18 fw-bold mb-2" style="color: #EC5353;">$0.34/min</p>
+                      <p class="fs-19 text-muted mb-0">6,000 - 20,000 minutes</p>
+                    </div>
                   </div>
-                  <div class="d-flex align-items-center col-12 py-3 border-bottom" style="height: 54px;">
-                    <h3 class="fs-17 fw-semibold mb-0">5 mins</h3>
-                  </div>
-                  <div class="d-flex align-items-center col-12 py-3 border-bottom" style="height: 54px;">
-                    <h3 class="fs-17 fw-semibold mb-0">10</h3>
-                  </div>
-                  <div class="d-flex align-items-center col-12 py-3 border-bottom" style="height: 54px;">
-                    <h3 class="fs-17 fw-semibold mb-0">20</h3>
-                  </div>
-                  <div class="d-flex align-items-center col-12 py-3 border-bottom" style="height: 54px;">
-                    <h3 class="fs-17 fw-semibold mb-0">150</h3>
-                  </div>
-                  <div class="d-flex align-items-center col-12 py-3 border-bottom" style="height: 54px;">
-                    <h3 class="fs-17 fw-semibold mb-0">Unlimited</h3>
-                  </div>
-                  <div class="d-flex align-items-center col-12 py-3 border-bottom" style="height: 54px;">
-                    <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M16.7071 5.29289C17.0976 5.68342 17.0976 6.31658 16.7071 6.70711L8.70711 14.7071C8.31658 15.0976 7.68342 15.0976 7.29289 14.7071L3.29289 10.7071C2.90237 10.3166 2.90237 9.68342 3.29289 9.29289C3.68342 8.90237 4.31658 8.90237 4.70711 9.29289L8 12.5858L15.2929 5.29289C15.6834 4.90237 16.3166 4.90237 16.7071 5.29289Z" fill="#14B082"></path>
-                    </svg>
-                  </div>
-                  <div class="d-flex align-items-center col-12 py-3 border-bottom" style="height: 54px;">
-                    <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M16.7071 5.29289C17.0976 5.68342 17.0976 6.31658 16.7071 6.70711L8.70711 14.7071C8.31658 15.0976 7.68342 15.0976 7.29289 14.7071L3.29289 10.7071C2.90237 10.3166 2.90237 9.68342 3.29289 9.29289C3.68342 8.90237 4.31658 8.90237 4.70711 9.29289L8 12.5858L15.2929 5.29289C15.6834 4.90237 16.3166 4.90237 16.7071 5.29289Z" fill="#14B082"></path>
-                    </svg>
-                  </div>
-                  <div class="d-flex align-items-center col-12 pt-6">
-                    <button class="btn btn-outline-light fs-18 text-white fw-bold px-10 py-3" type="button" style="background: linear-gradient(98.24deg, #FFB36D 0%, #EC5353 100%);">Choose</button>
+                  <div class="col-12 col-md-4">
+                    <div class="p-4 rounded-2 border" id="tier3" style="transition: all 0.3s ease;">
+                      <h4 class="fs-16 fw-semibold mb-2">Enterprise</h4>
+                      <p class="fs-18 fw-bold mb-2" style="color: #5B6AF0;">$0.29/min</p>
+                      <p class="fs-19 text-muted mb-0">20,000+ minutes</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="row">
-                  <div class="col-12 pb-7" style="height: 110px;">
-                    <h2 class="fs-16 mb-2">Professional</h2>
-                    <h3 class="fs-14 mb-2">$49/mo</h3>
-                    <p class="fs-19 text-muted mb-0">Best for big agency</p>
-                  </div>
-                  <div class="d-flex align-items-center col-12 py-3 pt-6 border-bottom border-top" style="height: 69px;">
-                    <h3 class="fs-17 fw-semibold mb-0">500 GB</h3>
-                  </div>
-                  <div class="d-flex align-items-center col-12 py-3 border-bottom" style="height: 54px;">
-                    <h3 class="fs-17 fw-semibold mb-0">No Intervarl</h3>
-                  </div>
-                  <div class="d-flex align-items-center col-12 py-3 border-bottom" style="height: 54px;">
-                    <h3 class="fs-17 fw-semibold mb-0">100</h3>
-                  </div>
-                  <div class="d-flex align-items-center col-12 py-3 border-bottom" style="height: 54px;">
-                    <h3 class="fs-17 fw-semibold mb-0">Unlimited</h3>
-                  </div>
-                  <div class="d-flex align-items-center col-12 py-3 border-bottom" style="height: 54px;">
-                    <h3 class="fs-17 fw-semibold mb-0">500</h3>
-                  </div>
-                  <div class="d-flex align-items-center col-12 py-3 border-bottom" style="height: 54px;">
-                    <h3 class="fs-17 fw-semibold mb-0">Unlimited</h3>
-                  </div>
-                  <div class="d-flex align-items-center col-12 py-3 border-bottom" style="height: 54px;">
-                    <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M16.7071 5.29289C17.0976 5.68342 17.0976 6.31658 16.7071 6.70711L8.70711 14.7071C8.31658 15.0976 7.68342 15.0976 7.29289 14.7071L3.29289 10.7071C2.90237 10.3166 2.90237 9.68342 3.29289 9.29289C3.68342 8.90237 4.31658 8.90237 4.70711 9.29289L8 12.5858L15.2929 5.29289C15.6834 4.90237 16.3166 4.90237 16.7071 5.29289Z" fill="#14B082"></path>
-                    </svg>
-                  </div>
-                  <div class="d-flex align-items-center col-12 py-3 border-bottom" style="height: 54px;">
-                    <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M16.7071 5.29289C17.0976 5.68342 17.0976 6.31658 16.7071 6.70711L8.70711 14.7071C8.31658 15.0976 7.68342 15.0976 7.29289 14.7071L3.29289 10.7071C2.90237 10.3166 2.90237 9.68342 3.29289 9.29289C3.68342 8.90237 4.31658 8.90237 4.70711 9.29289L8 12.5858L15.2929 5.29289C15.6834 4.90237 16.3166 4.90237 16.7071 5.29289Z" fill="#14B082"></path>
-                    </svg>
-                  </div>
-                  <div class="d-flex align-items-center col-12 pt-6">
-                    <button class="btn btn-outline-light-dark fs-18 text-black fw-bold px-10 py-3" type="button">Choose</button>
+                
+                <!-- Cost Breakdown -->
+                <div class="bg-light-light rounded-2 p-4 mb-6" id="costBreakdown">
+                  <h4 class="fs-16 fw-semibold mb-3">Cost Breakdown</h4>
+                  <div id="breakdownDetails">
+                    <div class="d-flex justify-content-between mb-2">
+                      <span class="text-muted">1,000 minutes at $0.38/min</span>
+                      <span class="fw-semibold">$380.00</span>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="row">
-                  <div class="col-12 pb-7" style="height: 110px;">
-                    <h2 class="fs-16 mb-2">Exclusive</h2>
-                    <h3 class="fs-14 mb-2">$99/mo</h3>
-                    <p class="fs-19 text-muted mb-0">Best for enterprises</p>
-                  </div>
-                  <div class="d-flex align-items-center col-12 py-3 pt-6 border-bottom border-top" style="height: 69px;">
-                    <h3 class="fs-17 fw-semibold mb-0">2 TB</h3>
-                  </div>
-                  <div class="d-flex align-items-center col-12 py-3 border-bottom" style="height: 54px;">
-                    <h3 class="fs-17 fw-semibold mb-0">No Intervarl</h3>
-                  </div>
-                  <div class="d-flex align-items-center col-12 py-3 border-bottom" style="height: 54px;">
-                    <h3 class="fs-17 fw-semibold mb-0">Unlimited</h3>
-                  </div>
-                  <div class="d-flex align-items-center col-12 py-3 border-bottom" style="height: 54px;">
-                    <h3 class="fs-17 fw-semibold mb-0">Unlimited</h3>
-                  </div>
-                  <div class="d-flex align-items-center col-12 py-3 border-bottom" style="height: 54px;">
-                    <h3 class="fs-17 fw-semibold mb-0">Unlimited</h3>
-                  </div>
-                  <div class="d-flex align-items-center col-12 py-3 border-bottom" style="height: 54px;">
-                    <h3 class="fs-17 fw-semibold mb-0">Unlimited</h3>
-                  </div>
-                  <div class="d-flex align-items-center col-12 py-3 border-bottom" style="height: 54px;">
-                    <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M16.7071 5.29289C17.0976 5.68342 17.0976 6.31658 16.7071 6.70711L8.70711 14.7071C8.31658 15.0976 7.68342 15.0976 7.29289 14.7071L3.29289 10.7071C2.90237 10.3166 2.90237 9.68342 3.29289 9.29289C3.68342 8.90237 4.31658 8.90237 4.70711 9.29289L8 12.5858L15.2929 5.29289C15.6834 4.90237 16.3166 4.90237 16.7071 5.29289Z" fill="#14B082"></path>
-                    </svg>
-                  </div>
-                  <div class="d-flex align-items-center col-12 py-3 border-bottom" style="height: 54px;">
-                    <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M16.7071 5.29289C17.0976 5.68342 17.0976 6.31658 16.7071 6.70711L8.70711 14.7071C8.31658 15.0976 7.68342 15.0976 7.29289 14.7071L3.29289 10.7071C2.90237 10.3166 2.90237 9.68342 3.29289 9.29289C3.68342 8.90237 4.31658 8.90237 4.70711 9.29289L8 12.5858L15.2929 5.29289C15.6834 4.90237 16.3166 4.90237 16.7071 5.29289Z" fill="#14B082"></path>
-                    </svg>
-                  </div>
-                  <div class="d-flex align-items-center col-12 pt-6">
-                    <button class="btn btn-outline-light-dark fs-18 text-black fw-bold px-10 py-3" type="button">Choose</button>
-                  </div>
-                </div>
+                
+                <!-- CTA Button -->
+                <button class="btn btn-outline-light fs-18 text-white fw-bold px-12 py-4" type="button" style="background: linear-gradient(98.24deg, #FFB36D 0%, #EC5353 100%);">Get Started</button>
               </div>
             </div>
           </div>
@@ -357,5 +243,6 @@
     </div>
     <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/pricing-calculator.js"></script>
   </body>
 </html>
